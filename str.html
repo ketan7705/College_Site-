@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String</title>
+	<script type="text/javascript">
+		var text = "this, is too much";
+		var len = text.length;
+		document.write("Length is "+len)
+
+		var pos = text.indexOf("too");
+		document.write("<br> Position of too is "+pos);
+
+		var part = text.slice(5,12);
+		document.write("<br>Substring is "+part);
+
+		str = "Please visit Max!";
+		var text = str.replace("Max", "Splash");
+		document.write("<br>"+text);
+		document.write("<br>"+text.toUpperCase());
+		document.write("<br>"+text.toLowerCase());
+
+		var text1 = "Hel     lo";
+		text1 = text1.trim();
+		document.write("<br>"+text1);
+		var ns = "lion,tiger,cat,dog,cow";
+		var list1 = ns.split(",");
+		for(i=0;i<list1.length;i++){
+			document.write("<br>"+list1[i])
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
